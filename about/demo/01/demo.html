@@ -7,7 +7,7 @@
     
 
     <title>
-      md语法 | 涧生 
+       
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,16 +16,67 @@
     
     
 
-    <meta name="description" content="这篇博文仅作md语法测试">
-<meta property="og:type" content="article">
-<meta property="og:title" content="md语法 | 涧生">
-<meta property="og:url" content="http://JasonLoong.github.io/2016/01/28/md语法/index.html">
+    <meta name="description" content="&amp;lt;!doctype html&amp;gt;
+
+
+
+css3响应式多级菜单
+
+ul,h3{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style:none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+a{
+    text-deco">
+<meta property="og:type" content="website">
+<meta property="og:title" content="涧生">
+<meta property="og:url" content="http://JasonLoong.github.io/about/demo/01/demo.html">
 <meta property="og:site_name" content="涧生">
-<meta property="og:description" content="这篇博文仅作md语法测试">
-<meta property="og:updated_time" content="2016-01-29T09:07:09.548Z">
+<meta property="og:description" content="&amp;lt;!doctype html&amp;gt;
+
+
+
+css3响应式多级菜单
+
+ul,h3{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style:none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+a{
+    text-deco">
+<meta property="og:updated_time" content="2016-02-03T12:35:47.676Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="md语法 | 涧生">
-<meta name="twitter:description" content="这篇博文仅作md语法测试">
+<meta name="twitter:title" content="涧生">
+<meta name="twitter:description" content="&amp;lt;!doctype html&amp;gt;
+
+
+
+css3响应式多级菜单
+
+ul,h3{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style:none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+a{
+    text-deco">
     
     
     
@@ -192,74 +243,197 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">md语法</h1>
+    <h1 class="post-title"></h1>
 
-    
-
-    <div class="post-meta">
-      <time datetime="2016-01-28" class="post-meta__date date">2016-01-28</time> 
-
-      <span class="post-meta__tags tags">
-
-          
-
-          
-             &#8226; 标签:
-            <font class="tags">
-              <a class="tags-link" href="/tags/markdown/">markdown</a>
-            </font>
-          
-
-      </span>
-    </div>
-    
     
 
   </header>
 
   <section id="post-content" class="article-content post">
-    <p>这篇博文仅作md语法测试<br><a id="more"></a></p>
-<h1 id="markdown__u7B80_u660E_u8BED_u6CD5"><a href="#markdown__u7B80_u660E_u8BED_u6CD5" class="headerlink" title="markdown 简明语法"></a>markdown 简明语法</h1><hr>
-<h2 id="1-__u57FA_u672C_u7B26_u53F7"><a href="#1-__u57FA_u672C_u7B26_u53F7" class="headerlink" title="1. 基本符号"></a>1. 基本符号</h2><ul>
-<li>*,-,+ 3个符号效果都一样，这3个符号被称为 Markdown符号</li>
-<li>空白行表示另起一个段落</li>
-<li>`是表示inline代码，tab是用来标记 代码段，分别对应html的code，pre标签</li>
+    <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>css3响应式多级菜单</title>
+<style>
+ul,h3{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style:none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+#header{
+    margin: 0 auto;
+    z-index: 2;}
+.list{
+    float: left;
+}
+.clear{
+    zoom: 1;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#lis{
+    margin:0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.list{
+    flex: 1 1 100%;
+}
+#lis h3{
+    cursor: pointer;
+    height:30px;
+    background:url(img/ico1.gif) no-repeat 10px center #FF9;
+    line-height:30px;
+    text-indent:30px;
+    border: 1px solid #ffc200;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#lis .active{
+    height:30px;
+    background:url(img/ico2.gif) no-repeat 10px center #FFFF33;
+    line-height:30px;
+    text-indent:30px;
+}
+#lis ul{
+    display:none;
+}
+#lis ul li{
+    background:#FFC;
+    line-height:24px;
+    text-indent:30px;
+    border:1px solid #ff6f13;
+}
+#lis ul .hover{
+    background: #609cff;
+}
+
+@media (min-width: 480px) {
+        .list{
+            flex: 1 1 50%;}
+}
+@media (min-width: 768px) {
+        #lis{
+            flex-flow: row nowrap;}
+}
+</style>
+
+<script>
+window.onload = function(){
+	var oUl = document.getElementById('lis');
+	var aH3 = oUl.getElementsByTagName('h3');
+	var aUl = oUl.getElementsByTagName('ul');
+	var aLi = null;
+	var arrLi = [];
+    var aLink=oUl.getElementsByTagName('a');
+
+    for(var i=0;i<aLink.length;i++)
+    {
+        aLink[i].target='_blank';
+    }
+
+	for( var i=0; i<aH3.length; i++){
+		aH3[i].index = i;
+		aH3[i].onclick = function(){
+			if(this.className == ''){
+			for(var i=0; i<aUl.length; i++)
+			{	aUl[i].style.display = 'none';
+				aH3[i].className = '';
+			}
+			
+			aUl[this.index].style.display = 'block';
+			
+			this.className = 'active';
+			} else{
+			aUl[this.index].style.display = 'none';
+			this.className = '';
+			}
+			}
+		
+		}
+	
+	for(var i=0; i<aUl.length; i++){
+		var aLi = aUl[i].getElementsByTagName('li');
+		for(var j=0; j<aLi.length; j++){
+			arrLi.push(aLi[j]);
+		}
+	}
+	
+	for( var i=0;i<arrLi.length; i++){
+		arrLi[i].onclick = function(){
+			if(this.className == ''){
+				for(var i=0; i<arrLi.length; i++){ arrLi[i].className = ''; }
+				this.className = 'hover'; }
+			else{ this.className = '';}
+		}
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="header" class="clear">
+<ul id="lis" class="clear">
+	<li class="list">
+    	<h3>HTML</h3>
+            <ul>
+                <li><a href="#">第一层</a></li>
+                <li><a href="#">第一层</a></li>
+                <li><a href="#">第一层</a></li>
+                <li><a href="#">第一层</a></li>
+            </ul>
+    </li>
+	<li class="list">
+    	<h3>CSS</h3>
+            <ul>
+                <li><a href="#">第二层</a></li>
+                <li><a href="#">第二层</a></li>
+                <li><a href="#">第二层</a></li>
+            </ul>
+    </li>
+	<li class="list">
+    	<h3>JavaScript</h3>
+            <ul>
+                <li><a href="#">第三层</a></li>
+                <li><a href="#">第三层</a></li>
+            </ul>
+    </li>
+    <li class="list">
+        <h3>JQuery</h3>
+            <ul>
+                <li><a href="#">第四层</a></li>
+                <li><a href="#">第四层</a></li>
+                <li><a href="#">第四层</a></li>
+                <li><a href="#">第四层</a></li>
+                <li><a href="#">第四层</a></li>
+            </ul>
+    </li>
+    <li class="list">
+        <h3>AngularJS</h3>
+            <ul>
+                <li><a href="#">第五层</a></li>
+                <li><a href="#">第五层</a></li>
+                <li><a href="#">第五层</a></li>
+            </ul>
+    </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if (window.console &#38;&#38; window.console.log) &#123;console.log(&#34;&#21457;&#29616;&#26377;&#20154;&#20599;&#31397;&#65281;&#34;)&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="2-__u6362_u884C"><a href="#2-__u6362_u884C" class="headerlink" title="2. 换行"></a>2. 换行</h2><ul>
-<li>单一段落用一个空白行</li>
-<li>连续两个空格 会变成一个换行</li>
-<li>连续3个符号，然后是空行，表示hr横线</li>
-</ul>
-<h2 id="3-__u6807_u9898"><a href="#3-__u6807_u9898" class="headerlink" title="3. 标题"></a>3. 标题</h2><ul>
-<li>生成h1–h6,在文字前面加上 1–6个# 来实现</li>
-<li>文字加粗是通过文字左右各两个符号</li>
-</ul>
-<h2 id="4-__u5F15_u7528"><a href="#4-__u5F15_u7528" class="headerlink" title="4. 引用"></a>4. 引用</h2><ul>
-<li>在第一行加上 “&gt;”和一个空格，表示代码引用，还可以嵌套</li>
-</ul>
-<h2 id="5-__u5217_u8868"><a href="#5-__u5217_u8868" class="headerlink" title="5. 列表"></a>5. 列表</h2><p>这个是markdown文件的主要表示方式，主题要点化</p>
-<ul>
-<li>使用*,+,-加上一个空格来表示</li>
-<li>可以支持嵌套</li>
-<li>有序列表用 数字+英文点+空格来表示</li>
-<li>列表内容很长，不需要手工输入换行符，css控制段落的宽度，会自动的缩放的</li>
-</ul>
-<h2 id="6-__u94FE_u63A5"><a href="#6-__u94FE_u63A5" class="headerlink" title="6. 链接"></a>6. 链接</h2><ul>
-<li>直接写 中括号（显示）小括号（链接地址）<a href="/url" title="可选的title">锚文本</a></li>
-<li>引用 先定义 [ref_name]:url，然后在需要写入url的地方， 这样使用[锚文本][ref_name]，通常的ref_name一般用数字表示，这样显得专业</li>
-<li>简写url：用尖括号包裹url 这样生成的url锚文本就是url本身</li>
-</ul>
-<h2 id="7-__u63D2_u5165_u56FE_u7247"><a href="#7-__u63D2_u5165_u56FE_u7247" class="headerlink" title="7. 插入图片"></a>7. 插入图片</h2><ul>
-<li>一行表示: 链接前加感叹号</li>
-<li>引用表示法: ![alt_text][id],预先定义 [id]:url “可选title”</li>
-<li>直接使用标签，这样可以指定图片的大小尺寸</li>
-</ul>
-<h2 id="8-__u7279_u6B8A_u7B26_u53F7"><a href="#8-__u7279_u6B8A_u7B26_u53F7" class="headerlink" title="8. 特殊符号"></a>8. 特殊符号</h2><ul>
-<li>用\来转义，表示文本中的markdown符号</li>
-<li>可以在文本中直接使用html标签，但是要注意在使用的时候，前后加上空行</li>
-<li>文本前后各加一个符号，表示斜体</li>
-</ul>
+</div>
+</body>
+</html>
 
   </section>
 
@@ -268,7 +442,7 @@ classes that you can use:
 
 <section class="post-comments">
 
-    <div class="ds-thread" data-thread-key="2016/01/28/md语法/"></div>
+    <div class="ds-thread" data-thread-key="about/demo/01/demo.html"></div>
 
     <script type="text/javascript">
       var duoshuoQuery = {short_name:"xunko"};
@@ -304,18 +478,6 @@ classes that you can use:
 
     
     
-
-    <script src="/js/awesome-toc.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $.awesome_toc({
-                overlay: true,
-                contentId: "post-content",
-            });
-        });
-    </script>
-
-
     
     
     <!--kill ie6 -->
