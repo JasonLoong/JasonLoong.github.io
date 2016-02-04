@@ -7,7 +7,7 @@
     
 
     <title>
-       
+      Chrome-DevTools | 涧生 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,40 +16,16 @@
     
     
 
-    <meta name="description" content="&amp;lt;!doctype html&amp;gt;
-
-
-
-图片自动切换查看
-
-/*body,h4{ margin:30px; background-color:#09C;}*/
-#content{width:100%; margin: 0 auto;}
-.box{ width:384px; height:216px; position:relative; background:url(loader_ico.gif)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="涧生">
-<meta property="og:url" content="http://xunko.github.io/about/demo/02/demo.html">
+    <meta name="description" content="Chrome浏览器的开发工具是个强大的IDE，只是我们平时总忽略它。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chrome-DevTools | 涧生">
+<meta property="og:url" content="http://xunko.github.io/2016/02/04/Chrome-DevTools/index.html">
 <meta property="og:site_name" content="涧生">
-<meta property="og:description" content="&amp;lt;!doctype html&amp;gt;
-
-
-
-图片自动切换查看
-
-/*body,h4{ margin:30px; background-color:#09C;}*/
-#content{width:100%; margin: 0 auto;}
-.box{ width:384px; height:216px; position:relative; background:url(loader_ico.gif)">
-<meta property="og:updated_time" content="2016-02-03T11:42:47.942Z">
+<meta property="og:description" content="Chrome浏览器的开发工具是个强大的IDE，只是我们平时总忽略它。">
+<meta property="og:updated_time" content="2016-02-04T15:52:40.074Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="涧生">
-<meta name="twitter:description" content="&amp;lt;!doctype html&amp;gt;
-
-
-
-图片自动切换查看
-
-/*body,h4{ margin:30px; background-color:#09C;}*/
-#content{width:100%; margin: 0 auto;}
-.box{ width:384px; height:216px; position:relative; background:url(loader_ico.gif)">
+<meta name="twitter:title" content="Chrome-DevTools | 涧生">
+<meta name="twitter:description" content="Chrome浏览器的开发工具是个强大的IDE，只是我们平时总忽略它。">
     
     
     
@@ -216,95 +192,73 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title"></h1>
+    <h1 class="post-title">Chrome-DevTools</h1>
 
+    
+
+    <div class="post-meta">
+      <time datetime="2016-02-04" class="post-meta__date date">2016-02-04</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/chrome，devtools/">chrome，devtools</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
     
 
   </header>
 
   <section id="post-content" class="article-content post">
-    <!doctype html>
-<html xmlns="http://www.w3.org/1999/html">
-<head>
-<meta charset="utf-8">
-<title>图片自动切换查看</title>
-<style>
-/*body,h4{ margin:30px; background-color:#09C;}*/
-#content{width:100%; margin: 0 auto;}
-.box{ width:384px; height:216px; position:relative; background:url(loader_ico.gif) no-repeat center; border:none; margin-bottom: 20px;}
-.box img{ border:none; width:384px; height:216px; }
-.box ul{ padding:0; margin:0; position:absolute; top:0; right:-40px;}
-.box li{ list-style:none; width:30px; height:30px; background:#06F; margin-bottom:10px;}
-.box .active{ background:#0FF;}
-.box span{ width:384px; height:30px; line-height:30px; text-align:center; position:absolute; top:0; left:0; font-size:24px; color:#000;}
-</style>
-<script>
-window.onload = function() {
-		fn('pic1',['a.jpg', 'b.jpg', 'c.jpg', 'd.jpg', 'e.jpg'],'onclick');
-		fn('pic2',['b.jpg', 'c.jpg', 'd.jpg', 'e.jpg'],'onmouseover');
-
-}
-function fn(id,arrUrl,evt){
-		var oDiv = document.getElementById(id);
-		var oImg = oDiv.getElementsByTagName('img')[0];
-		var oSpan = oDiv.getElementsByTagName('span')[0];
-		var oUl = oDiv.getElementsByTagName('ul')[0];
-		var aLi = oDiv.getElementsByTagName('li');
-		var num = 0;
-		var timer = null;
-		function autorun(){
-				timer = setInterval(function(){
-				num++;
-				num %= arrUrl.length;
-				fnTab();
-			},1000)
-		}
-		autorun();
-		oDiv.onmousemove = function(){clearInterval(timer);}
-		oDiv.onmouseout = autorun;
-		for (var i = 0; i < arrUrl.length; i++) {
-			oUl.innerHTML += '<li></li>';
-		}
-		function fnTab() {
-			oImg.src = arrUrl[num];
-			oSpan.innerHTML = 1 + num + '/' + arrUrl.length;
-			for (var i = 0; i < arrUrl.length; i++) {
-				aLi[i].className = '';
-			}
-			aLi[num].className = 'active';
-		}
-		fnTab();//初始化
-		for (var i = 0; i < arrUrl.length; i++) {
-			aLi[i].index = i;
-			aLi[i][evt] = function () {
-				num = this.index;
-				fnTab();
-			}
-		}
-	}
-
-</script>
-</head>
-
-<body>
-<div id="content">
-<div id="pic1" class="box">
-	<img src="">
-    <ul>
-    </ul>
-    <span>图片正在加载中</span>
-</div>
-<br>
-<div id="pic2" class="box">
-	<img src="">
-    <ul>
-    </ul>
-    <span>图片正在加载中</span>
-</div>
-	<p></p><h4>载入后图片列表自动循环播放，鼠标指针移到图片上时停在当前图片。<br>右侧小方块可以切换图片，上为点击切换，下为滑动切换。</h4><p></p>
-</div>
-</body>
-</html>
+    <p>Chrome浏览器的开发工具是个强大的IDE，只是我们平时总忽略它。</p>
+<a id="more"></a>
+<p>DevTools具有一些内建的快捷键，开发者可以在日常的开发过程中使用它们以节约时间。以下列举的是每个快捷方式在Windows / Linux和Mac下相应的快捷键。有些快捷键是在全局有效的，而有些只是在某一个面板生效。</p>
+<hr>
+<h2 id="u6253_u5F00DevTools"><a href="#u6253_u5F00DevTools" class="headerlink" title="打开DevTools"></a>打开DevTools</h2><p><strong>在Google Chrome的任何页面或者应用中，你可以通过以下的方式打开 DevTools:</strong></p>
+<ul>
+<li>打开 Chrome DevTools：F12, Ctrl + Shift + I</li>
+<li>打开／切换 审查元素模式和浏览模式：Ctrl + Shift + C</li>
+<li>打开 Chrome DevTools ,并聚焦在 console 上：Ctrl + Shift + J</li>
+<li>审查审查器 (取消第一个审查器的停靠后再按键)：Ctrl + Shift + J</li>
+</ul>
+<h2 id="u5168_u90E8_u9762_u677F"><a href="#u5168_u90E8_u9762_u677F" class="headerlink" title="全部面板"></a>全部面板</h2><ul>
+<li>上/下一个面板：Ctrl + [/]</li>
+<li>打开/关闭 Console 或 关闭设置对话框：esc</li>
+<li>强制刷新页面，清除缓存内容：Ctrl + F5</li>
+<li>当前文件或标签页搜索文字：Ctrl + F</li>
+<li>所有资源中搜索文字：Ctrl + Shift + F</li>
+</ul>
+<h2 id="u5143_u7D20_28Elements_29__u9762_u677F"><a href="#u5143_u7D20_28Elements_29__u9762_u677F" class="headerlink" title="元素(Elements) 面板"></a>元素(Elements) 面板</h2><ul>
+<li>伸缩展开元素：Right, Left</li>
+<li>切换编辑为HTML：F2</li>
+</ul>
+<p><em>右键单击某个元素时你可以做</em>    </p>
+<ol>
+<li>强制元素在某个伪类状态: (:active, :hover, :focus, :visited)</li>
+<li>为元素设置断点（子元素修改，属性更改，元素删除）</li>
+<li>清除 console</li>
+</ol>
+<h2 id="u6837_u5F0F_28Styles_29__u4FA7_u8FB9_u680F"><a href="#u6837_u5F0F_28Styles_29__u4FA7_u8FB9_u680F" class="headerlink" title="样式(Styles) 侧边栏"></a>样式(Styles) 侧边栏</h2><ul>
+<li>跳转到样式规则属性在样式表的行数：Ctrl + 单击某个CSS属性</li>
+<li>跳转到属性值在样式表的行数：Ctrl + 单击某个CSS属性值</li>
+<li>查看自动填充建议：Ctrl + 空格</li>
+<li>编辑下一个 / 上一个属性：Tab, Shift + Tab</li>
+</ul>
+<h2 id="u8D44_u6E90_28Sources_29_u9762_u677F"><a href="#u8D44_u6E90_28Sources_29_u9762_u677F" class="headerlink" title="资源(Sources)面板"></a>资源(Sources)面板</h2><ul>
+<li>中断/恢复脚本执行：F8</li>
+<li>跳过下一个函数：F10</li>
+<li>跳入下一个函数：F11</li>
+<li>跳出当前函数：Shift + F11</li>
+<li></li>
+</ul>
 
   </section>
 
@@ -313,7 +267,7 @@ function fn(id,arrUrl,evt){
 
 <section class="post-comments">
 
-    <div class="ds-thread" data-thread-key="about/demo/02/demo.html"></div>
+    <div class="ds-thread" data-thread-key="2016/02/04/Chrome-DevTools/"></div>
 
     <script type="text/javascript">
       var duoshuoQuery = {short_name:"xunko"};
@@ -349,6 +303,18 @@ function fn(id,arrUrl,evt){
 
     
     
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
     
     
     <!--kill ie6 -->
