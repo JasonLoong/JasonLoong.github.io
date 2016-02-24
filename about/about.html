@@ -16,40 +16,43 @@
     
     
 
-    <meta name="description" content="&amp;lt;!doctype html&amp;gt;
+    <meta name="description" content="&amp;lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&amp;gt;
 
 
 
-图片自动切换查看
+i love you
 
-/*body,h4{ margin:30px; background-color:#09C;}*/
-#content{width:100%; margin: 0 auto;}
-.box{ width:384px; height:216px; position:relative; background:url(loader_ico.gif)">
+
+@font-face {
+  font-family: digit;
+  src: url(&apos;digital-7_mono.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="涧生">
-<meta property="og:url" content="http://xunko.github.io/about/demo/02/demo.html">
+<meta property="og:url" content="http://xunko.github.io/about/about.html">
 <meta property="og:site_name" content="涧生">
-<meta property="og:description" content="&amp;lt;!doctype html&amp;gt;
+<meta property="og:description" content="&amp;lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&amp;gt;
 
 
 
-图片自动切换查看
+i love you
 
-/*body,h4{ margin:30px; background-color:#09C;}*/
-#content{width:100%; margin: 0 auto;}
-.box{ width:384px; height:216px; position:relative; background:url(loader_ico.gif)">
-<meta property="og:updated_time" content="2016-02-03T11:42:47.942Z">
+
+@font-face {
+  font-family: digit;
+  src: url(&apos;digital-7_mono.">
+<meta property="og:updated_time" content="2016-02-13T13:37:32.617Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="涧生">
-<meta name="twitter:description" content="&amp;lt;!doctype html&amp;gt;
+<meta name="twitter:description" content="&amp;lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&amp;gt;
 
 
 
-图片自动切换查看
+i love you
 
-/*body,h4{ margin:30px; background-color:#09C;}*/
-#content{width:100%; margin: 0 auto;}
-.box{ width:384px; height:216px; position:relative; background:url(loader_ico.gif)">
+
+@font-face {
+  font-family: digit;
+  src: url(&apos;digital-7_mono.">
     
     
     
@@ -103,7 +106,7 @@
                 <li class="navigation__item"><a href="/#blog" title="" class="blog-button">Blog</a></li>
               
                 
-                <li class="navigation__item"><a href="/about/index.html" title="" class="">Demo</a></li>
+                <li class="navigation__item"><a href="about.html" title="" class="">About</a></li>
               
                 
                 <li class="navigation__item"><a href="/archive" title="" class="">Archive</a></li>
@@ -223,86 +226,116 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <!doctype html>
-<html xmlns="http://www.w3.org/1999/html">
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
-<title>图片自动切换查看</title>
-<style>
-/*body,h4{ margin:30px; background-color:#09C;}*/
-#content{width:100%; margin: 0 auto;}
-.box{ width:384px; height:216px; position:relative; background:url(loader_ico.gif) no-repeat center; border:none; margin-bottom: 20px;}
-.box img{ border:none; width:384px; height:216px; }
-.box ul{ padding:0; margin:0; position:absolute; top:0; right:-40px;}
-.box li{ list-style:none; width:30px; height:30px; background:#06F; margin-bottom:10px;}
-.box .active{ background:#0FF;}
-.box span{ width:384px; height:30px; line-height:30px; text-align:center; position:absolute; top:0; left:0; font-size:24px; color:#000;}
-</style>
-<script>
-window.onload = function() {
-		fn('pic1',['a.jpg', 'b.jpg', 'c.jpg', 'd.jpg', 'e.jpg'],'onclick');
-		fn('pic2',['b.jpg', 'c.jpg', 'd.jpg', 'e.jpg'],'onmouseover');
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>i love you</title>
 
+<style type="text/css">
+@font-face {
+  font-family: digit;
+  src: url('digital-7_mono.ttf') format("truetype");
 }
-function fn(id,arrUrl,evt){
-		var oDiv = document.getElementById(id);
-		var oImg = oDiv.getElementsByTagName('img')[0];
-		var oSpan = oDiv.getElementsByTagName('span')[0];
-		var oUl = oDiv.getElementsByTagName('ul')[0];
-		var aLi = oDiv.getElementsByTagName('li');
-		var num = 0;
-		var timer = null;
-		function autorun(){
-				timer = setInterval(function(){
-				num++;
-				num %= arrUrl.length;
-				fnTab();
-			},1000)
-		}
-		autorun();
-		oDiv.onmousemove = function(){clearInterval(timer);}
-		oDiv.onmouseout = autorun;
-		for (var i = 0; i < arrUrl.length; i++) {
-			oUl.innerHTML += '<li></li>';
-		}
-		function fnTab() {
-			oImg.src = arrUrl[num];
-			oSpan.innerHTML = 1 + num + '/' + arrUrl.length;
-			for (var i = 0; i < arrUrl.length; i++) {
-				aLi[i].className = '';
-			}
-			aLi[num].className = 'active';
-		}
-		fnTab();//初始化
-		for (var i = 0; i < arrUrl.length; i++) {
-			aLi[i].index = i;
-			aLi[i][evt] = function () {
-				num = this.index;
-				fnTab();
-			}
-		}
-	}
+</style>
 
-</script>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
 </head>
 
 <body>
-<div id="content">
-<div id="pic1" class="box">
-	<img src="">
-    <ul>
-    </ul>
-    <span>图片正在加载中</span>
+
+<div id="mainDiv">
+  <div id="content">
+<div id="words">
+      <div id="code">
+      <span class="comments">/**</span><br>
+      <span class="space"><span class="comments">*2014—01-01,</span><br>
+      <span class="space"><span class="comments">*2014-01-04.</span><br>
+      <span class="space"><span class="comments">*/</span><br>
+      Boy name = <span class="keyword">Mr</span> Long<br>
+      Girl name = <span class="keyword">Mrs</span> Hong<br>
+      <span class="comments">// Fall in love river. </span><br>
+      The boy love the girl;<br>
+      <span class="comments">// They love each other.</span><br>
+      The girl loved the boy;<br>
+      <span class="comments">// AS time goes on.</span><br>
+      The boy can not be separated the girl;<br>
+      <span class="comments">// At the same time.</span><br>
+      The girl can not be separated the boy;<br>
+      <span class="comments">// Both wind and snow all over the sky.</span><br>
+      <span class="comments">// Whether on foot or 5 kilometers.</span><br>
+      <span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br>
+      <span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br>
+      <span class="placeholder"><span class="comments">// Whether it is right now</span><br>
+      <span class="placeholder"><span class="comments">// Still in the distant future.</span><br>
+      <span class="placeholder">The boy has but one dream;<br>
+      <span class="comments">// The boy wants the girl could well have been happy.</span><br>
+      <br>
+      <br>
+      I want to say:<br>
+      Baby, I love you forever;<br>
+    </span></span></span></span></span></span></div>
+    <div id="loveHeart">
+      <canvas id="garden"></canvas>
+
+
+        <!-- <div id="messages">
+          亲爱的，这是我们相爱在一起的时光。
+          <div id="elapseClock"></div>
+        </div>
+        <div id="loveu">
+          爱你直到永永远远。<br/>
+          <div class="signature">- 爱你的人</div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- <div id="copyright">
+    <a href="#">....</a><br />
+    <a href="#">....</a><br />
+
+  </div> -->
 </div>
-<br>
-<div id="pic2" class="box">
-	<img src="">
-    <ul>
-    </ul>
-    <span>图片正在加载中</span>
-</div>
-	<p></p><h4>载入后图片列表自动循环播放，鼠标指针移到图片上时停在当前图片。<br>右侧小方块可以切换图片，上为点击切换，下为滑动切换。</h4><p></p>
-</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2013, 2, 28);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+  var msg = document.createElement("div");
+  msg.id = "errorMsg";
+  msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+  document.body.appendChild(msg);
+  $("#code").css("display", "none");
+  $("#copyright").css("position", "absolute");
+  $("#copyright").css("bottom", "10px");
+  document.execCommand("stop");
+} else {
+  setTimeout(function () {
+    startHeartAnimation();
+  }, 5000);
+
+  timeElapse(together);
+  setInterval(function () {
+    timeElapse(together);
+  }, 500);
+
+  adjustCodePosition();
+  $("#code").typewriter();
+}
+</script>
+
 </body>
 </html>
 
@@ -313,7 +346,7 @@ function fn(id,arrUrl,evt){
 
 <section class="post-comments">
 
-    <div class="ds-thread" data-thread-key="about/demo/02/demo.html"></div>
+    <div class="ds-thread" data-thread-key="about/about.html"></div>
 
     <script type="text/javascript">
       var duoshuoQuery = {short_name:"xunko"};
